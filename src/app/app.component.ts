@@ -36,9 +36,9 @@ import { AppState } from './app.service';
           <img src="assets/img/angular-logo.png" height="20" width="20">
           Demo
         </a><br>
-        <a md-button [routerLink]=" ['./module1'] " (click)="module1Click()">
+        <a md-button [routerLink]=" ['./egghead'] " (click)="eggheadClick()">
           <img src="assets/img/angular-logo.png" height="20" width="20">
-          @ngrx/store
+          egghead.io
         </a><br>
 
         <hr>
@@ -81,12 +81,14 @@ export class App {
     ];
   }
 
-  module1Click() {
-    this.title = 'Module1';
+  eggheadClick() {
+    this.title = 'Courses by Egghead';
     this.links = [
-      { caption: 'Component1', link: 'module1/component1' },
-      { caption: 'Component2', link: 'module1/component2' },
-      { caption: 'Module1-Home', link: 'module1' }
+      { caption: 'RxJS in Angular 2 (@ngrx/store)', link: 'egghead/rxjs' },
+      { caption: 'Components', link: 'egghead/components' },
+      { caption: 'Dependency', link: 'egghead/dependency'},
+      { caption: 'Router', link: 'egghead/router'},
+      { caption: 'Egghead-Home', link: 'egghead' }
     ];
   }
 

@@ -23,7 +23,7 @@ const AppStore = provideStore({clock, people});
 
 // Import own modules:
 import { DemoModule } from './demo/demo.module';
-import { Module1Module } from './module1/module1.module';
+import { EggheadModule } from './eggheadModule/egghead.module';
 
 
 // Import directives
@@ -53,7 +53,7 @@ const APP_PROVIDERS = [
     MdModule.forRoot(),
 
       DemoModule,
-      Module1Module
+      EggheadModule
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { Observable, Subject } from 'rxjs/Rx';
 import { Store } from '@ngrx/store';
 import { HOUR, SECOND, ADVANCE, RECALL } from '../../app.store';
-import { ClockComponent } from './clock/clock.component';
+import { ClockComponent } from './clockComponent/clock.component';
 
 
 
 
 
 @Component({
-    selector: 'component1',
+    selector: 'rxjs',
     directives: [ClockComponent],
     template: `<div>
         <h2>RxJS in Angular 2</h2>
@@ -25,7 +25,7 @@ import { ClockComponent } from './clock/clock.component';
         <button (click)="recall$.next()">Recall</button>
     </div>`
 })
-export class Component1Component {
+export class RxjsComponent {
     time;
     people;
 

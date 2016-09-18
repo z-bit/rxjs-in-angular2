@@ -8,10 +8,10 @@ import { DemoModule } from './demo/demo.module';
 import { DemoComponent } from './demo/demo.component';
 import { NoContent } from './demo/no-content/no-content';
 
-import { Module1Module } from './module1/module1.module';
-import { Module1Component } from './module1/module1.component';
-import { Component1Component } from './module1/component1/component1.component';
-import { Component2Component } from './module1/component2/conponent2.component';
+import { EggheadModule } from './eggheadModule/egghead.module';
+import { EggheadComponent } from './eggheadModule/egghead.component';
+import { RxjsComponent } from './eggheadModule/rxjsComponent/rxjs.component';
+import { Component2Component } from './eggheadModule/component2/conponent2.component';
 
 
 
@@ -29,8 +29,8 @@ export const ROUTES: Routes = [
       component: DemoComponent
   },
   {
-    path: 'module1',
-    component: Module1Component
+    path: 'egghead',
+    component: EggheadComponent
   },
   { path: '**',    component: Wrong },
 ];
